@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Hello replicante nexus 6
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+        <ion-label color="primary">Preco gaso</ion-label>
+      <ion-input type="number" [(ngModel)]="gasolina"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">Preco Alcoo</ion-label>
+      <ion-input type="number" [(ngModel)]="etanol"></ion-input>
+    </ion-item>
+    <button ion-button round outline (click)="calcular()">Calcular</button>
+  </ion-list>
+  <div *ngIf="mensagem">
+    Abasteça com {{mensagem}}
+  </div>
+  
+</ion-content>
