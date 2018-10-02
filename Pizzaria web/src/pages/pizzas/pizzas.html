@@ -1,0 +1,35 @@
+<!--
+  Generated template for the PizzasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lista de Pizzas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-label>Tradicionais</ion-label>
+    <button ion-item *ngFor="let pizza of pizzasT" (click)="verDetalhes(pizza.nome)">
+      {{pizza.nome}}
+    </button>
+  </ion-list>
+  <ion-list>
+      <ion-label>Especiais</ion-label>
+      <button ion-item *ngFor="let pizza of pizzasE" (click)="verDetalhes(pizza.nome)">
+        {{pizza.nome}}
+      </button>
+    </ion-list>
+    <ion-list>
+        <ion-label>Doces</ion-label>
+        <button ion-item *ngFor="let pizza of pizzasD" (click)="verDetalhes(pizza.nome)">
+          {{pizza.nome}}
+        </button>
+      </ion-list>
+</ion-content>

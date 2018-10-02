@@ -1,0 +1,31 @@
+<!--
+  Generated template for the ConcluirPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>concluir</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1> <ion-label>Valor  = R${{preco}}</ion-label></h1>
+<ion-list>
+    <ion-item>
+      <ion-label color="primary">Seu nome</ion-label>
+      <ion-input placeholder="Digite" [(ngModel)]="nome" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">Seu endereço</ion-label>
+        <ion-textarea placeholder="Digite" [(ngModel)]="endereco"></ion-textarea>
+      </ion-item>
+    </ion-list>  
+      <button ion-list (click)="alerta()">Comprar</button>
+
+</ion-content>
+
