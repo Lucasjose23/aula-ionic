@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+      <button ion-item *ngFor="let mecanica of mecanicas|async">{{mecanica.nome}}</button>
+    </ion-list>
+
+
+    <button ion-fab mini (click)="goAddMecanica()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+
+</ion-content>
